@@ -20,28 +20,28 @@ class _SplashPageState extends State<SplashPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       backgroundColor: Colors.deepPurple,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Icon(
+            Icon(
               Icons.check_circle,
               size: 100,
               color: Colors.white,
             ),
-            const SizedBox(height: 20),
-            const Text(
-              'Todo App',
+            SizedBox(height: 20),
+            Text(
+              'To-Do App',
               style: TextStyle(
                 fontSize: 30,
                 color: Colors.white,
                 fontWeight: FontWeight.bold,
               ),
             ),
-            const SizedBox(height: 10),
-            const CircularProgressIndicator(
+            SizedBox(height: 10),
+            CircularProgressIndicator(
               valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
             ),
           ],
