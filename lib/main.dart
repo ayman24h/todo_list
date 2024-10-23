@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
               },
             ),
         '/signup': (context) => SignUpPage(
-              onSignUp: (email) {
+              onSignUp: (email, password, username) {
                 Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(builder: (context) => HomePage()),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'home_page.dart'; // Import HomePage
 
 class LoginPage extends StatefulWidget {
   final Function(String) onLogin;
@@ -21,6 +22,13 @@ class _LoginPageState extends State<LoginPage> {
 
       // Simulating a login action
       widget.onLogin(email);
+
+      // Navigate to HomePage after login
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+            builder: (context) => HomePage()), // Navigate to HomePage
+      );
     }
   }
 
