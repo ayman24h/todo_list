@@ -98,7 +98,7 @@ class SignUpPage extends StatelessWidget {
                           Navigator.pop(context);
                         },
                         child: const Text(
-                          'Already have an account? Login',
+                          'Already have an account?\n Login',
                           style: TextStyle(color: Colors.white),
                         ),
                       ),

@@ -103,7 +103,7 @@ class _LoginPageState extends State<LoginPage> {
                           Navigator.pushReplacementNamed(context, '/signup');
                         },
                         child: const Text(
-                          'No account? Sign up!',
+                          'No account?\n Sign up!',
                           style: TextStyle(color: Colors.white),
                         ),
                       ),
